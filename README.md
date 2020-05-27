@@ -1,27 +1,20 @@
 # ROS Wrapper for GPD
 
-* [Author's website](http://www.ccs.neu.edu/home/atp/)
-* [License](https://github.com/atenpas/gpd2_ros/blob/master/LICENSE.md)
-* [GPD library](https://github.com/atenpas/gpd2)
-
-## Overview
-
 A ROS wrapper around the [GPD](https://github.com/atenpas/gpd2) package for detecting 6-DOF grasp poses for a
 2-finger robot hand (e.g., a parallel jaw gripper) in 3D point clouds.
 
-## 1) Installation
+## Installation
 
-The following instructions have been tested on **Ubuntu 16.04**. Similar
-instructions should work for other Linux distributions.
+The following instructions have been tested on **Ubuntu 16.04**.
 
-1. Install GPD. You can follow [these instructions](https://github.com/atenpas/gpd2#install).
+1. Install GPD. You can follow [these instructions](https://github.com/SnehalD14/gpd).
 
 2. Clone this repository into the `src` folder of your catkin workspace:
 
    ```
    cd <location_of_your_workspace>/src
-   git clone https://github.com/atenpas/gpd2_ros
-   ```
+   git clone https://github.com/SnehalD14/gpd_ros
+   ``
 
 3. Build your catkin workspace:
 
@@ -30,7 +23,7 @@ instructions should work for other Linux distributions.
    catkin_make
    ```
 
-## 2) Generate Grasps for a Point Cloud on a ROS Topic
+## Generate Grasps for a Point Cloud on a ROS Topic
 
 As C++ has issues with relative file paths, we first need to modify the config
 file in your `gpd` folder, e.g., `<location_of_gpd>/cfg/ros_eigen_params.cfg`.
@@ -43,12 +36,4 @@ cloud is received, the node will search the cloud for grasps.
 
 ```
 roslaunch gpd_ros ur5.launch
-```
-
-## 3) Troubleshooting
-
-If `catkin_make` cannot find `libinference_engine.so`, make sure that `LD_LIBRARY_PATH` contains the path to that library:
-
-```
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:path_to_dldt/inference-engine/bin/intel64/Release/lib/
 ```
