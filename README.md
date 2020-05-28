@@ -51,7 +51,7 @@ The following instructions have been tested on **Ubuntu 16.04**.
    We subscribe to the grasps planned using GPD and obtain position and orientation. This code makes the robot move the 
    object, grasps it and move away from the table with the grasped object. 
           
-
+   Before running the execution code, make sure the robot is in the ``ready`` position
    ```
    python scripts/gpd_execution.py
    ```
