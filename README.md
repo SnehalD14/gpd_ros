@@ -55,4 +55,10 @@ The following instructions have been tested on **Ubuntu 16.04**.
    ```
    python scripts/gpd_execution.py
    ```
+## References
+
+Andreas ten Pas, Marcus Gualtieri, Kate Saenko, and Robert Platt. [**Grasp
+Pose Detection in Point Clouds**](http://arxiv.org/abs/1706.09911). The
+International Journal of Robotics Research, Vol 36, Issue 13-14, pp. 1455-1473.
+October 2017.
 
