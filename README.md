@@ -34,9 +34,10 @@ The following instructions have been tested on **Ubuntu 16.04**.
    ```
 
 2. Launch GPD planner service 
-The following command will launch a ROS node
-that waits for point clouds on the ROS topic `/r200/camera/depth_registered/points`. Once a point
-cloud is received, the node will search the cloud for grasps.
+
+   The following command will launch a ROS node
+   that waits for point clouds on the ROS topic `/r200/camera/depth_registered/points`. Once a point
+   cloud is received, the node will search the cloud for grasps.
 
    ```
    roslaunch gpd_ros gpd_planner_service.launch
@@ -44,7 +45,9 @@ cloud is received, the node will search the cloud for grasps.
    Make sure to close the visualization window for the publisher to recieve the grasps. 
 
 3. Run the GPD execution code
-   We subscribe to the grasps planned using GPD and obtain position and orientation.This code makes the robot move to the object, grasps it and move away from the table with the grasped object. 
+   We subscribe to the grasps planned using GPD and obtain position and orientation. This code makes the robot move the 
+   object, grasps it and move away from the table with the grasped object. 
+          
 
    ```
    python scripts/gpd_execution.py
