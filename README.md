@@ -1,4 +1,4 @@
-# ROS Wrapper for GPD
+# Franka Robot Pick and Place using GPD
 
 A ROS wrapper around the [GPD](https://github.com/SnehalD14/gpd) package for detecting 6-DOF grasp poses for a
 2-finger robot hand ( a parallel jaw gripper) in 3D point clouds.
