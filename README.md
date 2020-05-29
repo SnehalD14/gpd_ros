@@ -16,6 +16,7 @@ The following instructions have been tested on **Ubuntu 16.04**.
    ```
    cd <location_of_your_workspace>/src
    git clone https://github.com/SnehalD14/gpd_ros
+   git clone https://github.com/SnehalD14/autolab_core
    ```
 
 3. Build your catkin workspace:
