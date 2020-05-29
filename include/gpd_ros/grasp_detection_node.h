@@ -94,7 +94,7 @@ public:
   {
     delete cloud_camera_;
 //    delete importance_sampling_;
-    delete grasp_detector_;
+   // delete grasp_detector_;
     delete rviz_plotter_;
   }
 
