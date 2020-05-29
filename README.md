@@ -25,7 +25,7 @@ The following instructions have been tested on **Ubuntu 16.04**.
    cd <location_of_your_workspace>
    catkin_make
    ```
-4. For setting up the Franka simulation environment with Gazebo and Moveit, install [panda_simulation](https://github.com/SnehalD14/panda_simualtion).
+4. For setting up the Franka simulation environment with Gazebo and Moveit, install [panda_simulation](https://github.com/SnehalD14/panda_simulation).
 
 
 ## Instructions 
